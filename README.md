@@ -67,4 +67,27 @@ Abaixo está o diagrama de montagem do circuito. Siga o desenho para conectar o 
 2. Utilize jumpers para ligar os sensores e o LED à protoboard, conforme o diagrama.
 3. Verifique as conexões de alimentação para garantir que o circuito está devidamente energizado.
 
+## :computer_mouse: Passos para Execução
+
+1. **Conecte o ESP32 ao computador**: Use um cabo USB para conectar o ESP32 à porta USB do seu computador.
+
+2. **Carregue o Código na IDE do Arduino**: Abra o código na IDE do Arduino.
+
+3. **Selecione a Placa e a Porta**:
+   - Vá para **Ferramentas > Placa** e selecione **ESP32 Dev Module** (ou o modelo ESP32 específico que você está utilizando).
+   - Em **Ferramentas > Porta**, selecione a porta COM correspondente ao ESP32.
+
+4. **Configure as Credenciais de Wi-Fi e MQTT**:
+   - No código, edite as variáveis `ssid`, `password`, e `mqtt_server` com as credenciais de sua rede Wi-Fi e do servidor MQTT.
+
+5. **Faça o Upload do Código**: Clique no botão de upload (seta para a direita) na IDE do Arduino para enviar o código ao ESP32.
+
+6. **Monitor Serial**:
+   - Após o upload, abra o Monitor Serial (**Ferramentas > Monitor Serial**) para visualizar as mensagens e os dados sendo transmitidos.
+   - Ajuste a velocidade de comunicação para **115200 baud** para uma leitura correta dos dados.
+
+Após seguir esses passos, o projeto estará em execução localmente, e você poderá monitorar as leituras dos sensores e o funcionamento do atuador (LED) conforme o código.
+
+> **Observação**: Certifique-se de que o ESP32 está conectado corretamente e de que os drivers USB necessários para o seu sistema operacional estão instalados.
+
 
